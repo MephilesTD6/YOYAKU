@@ -1,7 +1,7 @@
 //Test by Mephiles
 import java.util.Scanner;
 
-class Tables {
+ public class Tables {
 
     int[] tables = {1, 0, 1, 1, 0, 1};
 
@@ -34,11 +34,3 @@ class Tables {
     }
 }
 
-    public static void main(String[] args) {
-        Tables ashwin = new Tables();
-
-        System.out.println(ashwin.addTable());
-        System.out.println(ashwin.removeTable());
-        ashwin.print();
-        System.out.println(ashwin.find());
-    }

@@ -4,18 +4,19 @@ import java.util.List;
 
 public class Tables {
 
+    //Apparently this is how u make an array from another class
     private List<Table> tables;
 
     public Tables() {
     this.tables = new ArrayList<>();
     }
 
-    public int addTable() {
-        return 1;
+    public void addTable() {
+       
     }
 
-    public int removeTable() {
-        return -1;
+    public void removeTable() {
+       
     }
 
     public void print() {

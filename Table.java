@@ -1,16 +1,15 @@
 //Syukri Fadhli bin Ahmad
 public class Table {
 
+    private int number;
+    private int ChairNumber;
+    
     public int TableNumber() {
-        int number = 0;
-
         return number;
     }
 
     public int ChairNumber() {
-        int number = 0;
-
-        return number;
+        return ChairNumber;
     }
 
     public boolean ReservationStatus() {

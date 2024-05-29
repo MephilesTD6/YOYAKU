@@ -18,8 +18,4 @@ public class Table {
 
         return status;
     }
-
-    public static void main(String[] args) {
-
-    }
 }

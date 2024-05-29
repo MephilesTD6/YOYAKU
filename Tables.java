@@ -1,4 +1,7 @@
 //See Tho Soon Yinn
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tables {
 
     private List<Table> tables;

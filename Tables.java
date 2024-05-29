@@ -1,16 +1,11 @@
 //See Tho Soon Yinn
 public class Tables {
 
-    // Constructor
-    public Tables(int size) {
-        table = new Table[size];
+    private List<Table> tables;
 
-        // To initialize the array elements with default values
-        for (int i = 0; i < size; i++) {
-            table[i] = new Table("Table" + i, i);
-      }
+    public Tables() {
+    this.tables = new ArrayList<>();
     }
-    Table tables = new Tables(100);
 
     public int addTable() {
         return 1;

@@ -1,7 +1,5 @@
 //Avinash Kumar A/L Jayaseelan
 
-package Java.Homework;
-
 public class Reservaction {
 
     private String name;

@@ -2,12 +2,6 @@
 
 public class Client
 {
-    public void name()
-    {
-        return;
-    }
-    public void phone_number()
-    {
-        return;
-    }
+    String name;
+    String phone_number;
 }

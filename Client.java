@@ -2,6 +2,6 @@
 
 public class Client
 {
-    String name;
-    String phone_number;
+    private String name;
+    private String phone_number;
 }

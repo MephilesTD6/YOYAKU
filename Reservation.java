@@ -13,8 +13,9 @@ public class Reservation {
     {
         return 0;
     }
-    
-    public int get_persons();
+
+    //input number of persons
+    public int get_pax();
     {
         return 0;
     }

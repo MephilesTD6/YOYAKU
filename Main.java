@@ -11,20 +11,20 @@ public class Main
 		Tables seetho = new Tables();
 		
 		
-            hamzah.addClient();
-            hamzah.removeClient();
-            hamzah.printClient();
-            hamzah.findClient();
+            	hamzah.addClient();
+            	hamzah.removeClient();
+            	hamzah.printClient();
+            	hamzah.findClient();
             
-            avi.addRes();
-            avi.removeRes();
-            avi.printRes();
-            avi.findRes();
+            	avi.addRes();
+            	avi.removeRes();
+            	avi.printRes();
+            	avi.findRes();
             
-            seetho.addTable();
-            seetho.removeTable();
-            seetho.printTable();
-            seetho.findTable();
+            	seetho.addTable();
+            	seetho.removeTable();
+            	seetho.printTable();
+            	seetho.findTable();
 		
 	}
 }

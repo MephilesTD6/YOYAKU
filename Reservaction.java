@@ -1,26 +1,32 @@
 //Avinash Kumar A/L Jayaseelan
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Reservaction {
 
-    private String name;
-    private String phone_number;
+ private List<Reservation> reservaction;
 
-    public void add()
+    public Reservaction() {
+    this.reservaction = new ArrayList<>();
+    }
+
+    public void addRes()
     {
         return;
     }
 
-    public void delete()
+    public void removeRes()
     {
         return;
     }
 
-    public void print()
+    public void printRes()
     {
         return;
     }
 
-    public void find()
+    public void findRes()
     {
         return;
     }

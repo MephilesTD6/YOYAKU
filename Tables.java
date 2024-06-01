@@ -19,11 +19,11 @@ public class Tables {
        
     }
 
-    public void print() {
+    public void printTable() {
        
     }
 
-    public void find() {
+    public void findTable() {
         
     }
 }

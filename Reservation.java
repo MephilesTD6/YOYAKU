@@ -1,18 +1,27 @@
+//Ashwin
+
 import java.util.Scanner;
 
 public class Reservation {
-      
     
-    
-    public int ask_table_num()
+  private int table_number;
+  private int number_of_persons;
+  
+   Scanner scanner = new Scanner(System.in);
+   
+   public int get_table_num()
     {
         return 0;
     }
     
-    public int count_number()
+    public int get_persons();
     {
         return 0;
     }
     
-    
+    //read input from Client class
+    public void client_input() {
+        
+    }
+ 
 }

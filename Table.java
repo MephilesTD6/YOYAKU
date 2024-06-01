@@ -1,18 +1,22 @@
 //Syukri Fadhli bin Ahmad
+import java.util.Scanner;
+
 public class Table {
 
-    private int number;
-    private int ChairNumber;
+    private int tableNumber;
+    private int chairNumber;
     
-    public int TableNumber() {
-        return number;
+     Scanner scanner = new Scanner(System.in);
+    
+    public int addTableNumber() {
+        return tableNumber;
     }
 
-    public int ChairNumber() {
-        return ChairNumber;
+    public int addChairNumber() {
+        return chairNumber;
     }
 
-    public boolean ReservationStatus() {
+    public boolean reservationStatus() {
         boolean status = false;
 
         return status;

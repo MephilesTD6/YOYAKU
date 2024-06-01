@@ -16,10 +16,10 @@ public class Main
             hamzah.printClient();
             hamzah.findClient();
             
-            avi.add();
-            avi.remove();
-            avi.print();
-            avi.find();
+            avi.addRes();
+            avi.removeRes();
+            avi.printRes();
+            avi.findRes();
             
             seetho.addTable();
             seetho.removeTable();

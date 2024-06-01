@@ -1,8 +1,15 @@
 //Hamzah Muhsin bin Hafiz Al-Asadi
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Clients{
 
-    private String[] Clientname;
+    private List<Client> clients;
+
+    public Clients() {
+    this.clients = new ArrayList<>();
+    }
 
 
     public void addClient() {

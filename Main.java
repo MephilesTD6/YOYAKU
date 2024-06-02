@@ -18,6 +18,7 @@ public class Main
             	hamzah.printClient();
             	hamzah.findClient();
 
+		ashwin.get_table();
 		ashwin.get_pax();
 		ashwin.client_input();
             

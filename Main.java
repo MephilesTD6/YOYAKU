@@ -10,8 +10,8 @@ public class Main
 		Table syukri = new Table();
 		Tables seetho = new Tables();
 		
-		avinash.get_();
-		avinash.get_();
+		avinash.get_name();
+		avinash.get_phone_number();
 			
             	hamzah.addClient();
             	hamzah.removeClient();

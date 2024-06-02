@@ -9,7 +9,7 @@ public class Reservation {
   
    Scanner scanner = new Scanner(System.in);
    
-   public int get_table_num()
+   public int get_table()
     {
         return 0;
     }

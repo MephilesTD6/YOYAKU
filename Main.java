@@ -27,9 +27,9 @@ public class Main
             	avi.printRes();
             	avi.findRes();
 
-		syukri.();
-		syukri.();
-		syukri.();
+		syukri.get_table_num();
+		syukri.get_pax();
+		syukri.client_input();
 		
             	seetho.addTable();
             	seetho.removeTable();

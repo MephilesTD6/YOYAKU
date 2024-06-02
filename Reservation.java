@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Reservation {
     
-  private int table_number;
   private int number_of_persons;
   
    Scanner scanner = new Scanner(System.in);

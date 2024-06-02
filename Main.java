@@ -10,17 +10,27 @@ public class Main
 		Table syukri = new Table();
 		Tables seetho = new Tables();
 		
-		
+		avinash.get_();
+		avinash.get_();
+			
             	hamzah.addClient();
             	hamzah.removeClient();
             	hamzah.printClient();
             	hamzah.findClient();
+
+		ashwin.();
+		ashwin.();
+		ashwin.input();
             
             	avi.addRes();
             	avi.removeRes();
             	avi.printRes();
             	avi.findRes();
-            
+
+		syukri.();
+		syukri.();
+		syukri.();
+		
             	seetho.addTable();
             	seetho.removeTable();
             	seetho.printTable();

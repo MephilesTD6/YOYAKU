@@ -11,14 +11,13 @@ public class Main
 		Tables seetho = new Tables();
 		
 		avinash.get_name();
-		avinash.get_phone_number();
+		avinash.get_phone_num();
 			
             	hamzah.addClient();
             	hamzah.removeClient();
             	hamzah.printClient();
             	hamzah.findClient();
 
-		ashwin.get_table_num();
 		ashwin.get_pax();
 		ashwin.client_input();
             
@@ -27,8 +26,8 @@ public class Main
             	avi.printRes();
             	avi.findRes();
 
-		syukri.add_table_num();
-		syukri.add();
+		syukri.get_table_num();
+		syukri.get_chair_num();
 		syukri.reservation_status();
 		
             	seetho.addTable();

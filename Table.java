@@ -8,15 +8,15 @@ public class Table {
     
      Scanner scanner = new Scanner(System.in);
     
-    public int addTableNumber() {
+    public int add_table_num() {
         return tableNumber;
     }
 
-    public int addChairNumber() {
+    public int add_chair_num() {
         return chairNumber;
     }
 
-    public boolean reservationStatus() {
+    public boolean reservation_status() {
         boolean status = false;
 
         return status;

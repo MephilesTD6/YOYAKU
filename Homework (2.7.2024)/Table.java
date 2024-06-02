@@ -1,4 +1,6 @@
-//Syukri Fadhli bin Ahmad
+// Syukri Fadhli bin Ahmad
+// 24000074
+
 import java.util.Scanner;
 
 public class Table {

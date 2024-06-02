@@ -18,18 +18,18 @@ public class Main
             	hamzah.printClient();
             	hamzah.findClient();
 
-		ashwin.();
-		ashwin.();
-		ashwin.input();
+		ashwin.get_table_num();
+		ashwin.get_pax();
+		ashwin.client_input();
             
             	avi.addRes();
             	avi.removeRes();
             	avi.printRes();
             	avi.findRes();
 
-		syukri.get_table_num();
-		syukri.get_pax();
-		syukri.client_input();
+		syukri.();
+		syukri.();
+		syukri.();
 		
             	seetho.addTable();
             	seetho.removeTable();

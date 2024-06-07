@@ -6,19 +6,29 @@ import java.util.Scanner;
 public class Client
 {
     private String name;
-    private String phone_number;
+    private String phoneNumber;
     
     Scanner sc = new Scanner(System.in);
     
-    public void get_name()
+       public void setName()
     {
         System.out.print("Enter name: ");
         name = sc.nextLine();
     }
     
-    public void get_phone_number()
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setPhoneNumber()
     {
         System.out.print("Enter phone number: ");
-        phone_number = sc.nextLine();
+        phoneNumber = sc.nextLine();
+    }
+
+    public String getPhoneNumber()
+    {
+        return phoneNumber;
     }
 }

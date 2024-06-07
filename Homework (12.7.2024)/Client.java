@@ -10,7 +10,7 @@ public class Client
     
     Scanner sc = new Scanner(System.in);
     
-       public void setName()
+    public void setName()
     {
         System.out.print("Enter name: ");
         name = sc.nextLine();

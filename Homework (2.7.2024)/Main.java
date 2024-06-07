@@ -15,10 +15,10 @@ public class Main
 
 		Scanner scan = new Scanner(System.in);
 
-		avinash.set_name();
-		avinash.set_phone_number();
-		System.out.println("Enter client name: " + avinash.get_name(String name));
-		System.out.println("Enter client contact number: " + avinash.get_phone_num(String num));
+        	avinash.setName();
+        	avinash.setPhoneNumber();
+		System.out.println("The client's name is : " + avinash.getName());
+		System.out.println("The client's contact number is: " + avinash.getPhoneNumber());
 			
             	System.out.println("Do you wish to add a client? (Y/N)");
 		addClient = scan.nextChar();	

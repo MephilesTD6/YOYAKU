@@ -1,32 +1,39 @@
 // Avinash Kumar A/L Jayaseelan
 // 24000113
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Reservations {
 
-    private ArrayList<String> name = new ArrayList<String>();
-    private ArrayList<String> phone_number = new ArrayList<String>();
+ private List<Reservation> action;
 
-    public void add(String newName, String newPhoneNo)
+    public Reservations() {
+    this.action = new ArrayList<>();
+    }
+
+    public void addRes(String newName, String newPhoneNo)
     {
         name.add(newName);
         phone_number.add(newPhoneNo);
         return;
     }
 
-    public void delete(String delInfo)
+    public void delRes(String delInfo)
     {
-        
+        int i = find(delInfo);
+        name.remove(i);
+        phone_number.remove(i);
         return;
     }
 
-    public void print(int index)
+    public void printRes()
     {
         System.out.println(name);
+        return;
     }
 
-    public int find(String findInfo)
+    public void findRes()
     {
         int index = -1;
         for(int i = 0; i < name.size(); i++)
@@ -38,10 +45,6 @@ public class Reservations {
             }
         }
         return index;
-    }
-
-    public ArrayList<String> getNameList()
-    {
-        return name;
+        return;
     }
 }

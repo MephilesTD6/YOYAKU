@@ -1,20 +1,20 @@
-// Hamzah Muhsin bin Hafiz Al-Asadi
-// 22001057
+/* -contains list of Client
+ * 
+ * 
+ */
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class Clients{
+public class Clients {
 
-    private List<Client> clients;
+    private ArrayList<Client> clientDatabase;
 
     public Clients() {
-    this.clients = new ArrayList<>();
+        this.clientDatabase = new ArrayList<Client>();
     }
 
-
     public void addClient() {
-    
+
     }
 
     public void removeClient() {
@@ -26,7 +26,6 @@ public class Clients{
     }
 
     public void findClient() {
-        
 
     }
 }

@@ -1,22 +1,39 @@
-// Avinash Kumar A/L Jayaseelan
-// 24000113
+/* -Handle input of individual client 
+ * -Will be called in main using argument (name, phone number)
+ * -
+ */
 
 import java.util.Scanner;
 
-public class Client
-{
+public class Client {
     private String name;
-    private String phone_number;
-    
-    Scanner scanner = new Scanner(System.in);
-    
-     public void get_name()
-    {
-       
+    private String phoneNumber;
+
+    Scanner input = new Scanner(System.in);
+
+    // CONSTRUCTORS
+    public Client(String name, String phoneNumber) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
     }
-    
-    public void get_phone_number()
-    {
-      
+
+    // SETTERS
+    public void setName() {
+        System.out.println("Name: ");
+        name = input.nextLine();
+    }
+
+    public void setPhoneNumber() {
+        System.out.println("Phone number: ");
+        phoneNumber = input.nextLine();
+    }
+
+    // GETTERS
+    public String getName() {
+        return name;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 }

@@ -12,6 +12,11 @@ public class Client {
     Scanner input = new Scanner(System.in);
 
     // CONSTRUCTORS
+    public Client() {
+        this.name = "";
+        this.phoneNumber = "";
+    }
+
     public Client(String name, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;

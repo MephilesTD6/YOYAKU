@@ -1,41 +1,42 @@
-// See Tho Soon Yinn
-// 24000187
+/*	1. CLIENT MANAGEMENT
+ *	2. RESERVATION MANAGEMENT
+ * 	3. TABLE MANAGEMENT
+ * 	4. EXIT PROGRAM
+ * 	CHOOSE OPTION : _____
+ * 
+ * 
+ * 	CLIENT MANAGEMENT:
+ *  1. ADD CLIENT
+ *  2. REMOVE CLIENT
+ *  3. PRINT ALL CLIENT
+ *  4. FIND CLIENT
+ *  5. BACK
+ *  CHOOSE OPTION: _____
+ * 	
+ * 	RESERVATION MANAGEMENT
+ *  1. ADD RESERVATION
+ *  2. REMOVE RESERVATION
+ *  3. PRINT ALL RESERVATION
+ *  4. FIND RESERVATION
+ *  5. BACK
+ *	CHOOSE OPTION: _____ 
+ *
+ * 
+ * 	TABLE MANAGEMENT
+ *  1. ADD TABLE: 
+ *  2. REMOVE TABLE: 
+ *  3. PRINT ALL TABLE: 
+ *  4. FIND TABLE: 
+ *  5. BACK 
+ *  CHOOSE OPTION: _____
+ * 	
+ */
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
-	    
-		Client avinash = new Client();
-		Clients hamzah = new Clients();
-		Reservation ashwin = new Reservation();
-		Reservaction avi = new Reservaction();
-		Table syukri = new Table();
-		Tables seetho = new Tables();
-		
-		avinash.get_name();
-		avinash.get_phone_num();
-			
-            	hamzah.addClient();
-            	hamzah.removeClient();
-            	hamzah.printClient();
-            	hamzah.findClient();
+		Clients clients = new Clients();
 
-		ashwin.get_table();
-		ashwin.get_pax();
-		ashwin.client_input();
-            
-            	avi.addRes();
-            	avi.removeRes();
-            	avi.printRes();
-            	avi.findRes();
-
-		syukri.get_table_num();
-		syukri.get_chair_num();
-		syukri.reservation_status();
-		
-            	seetho.addTable();
-            	seetho.removeTable();
-            	seetho.printTable();
-            	seetho.findTable();
+		clients.addClient();
+		clients.display();
 	}
 }

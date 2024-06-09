@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Client
 {
     private String name;
-    private String phoneNumber;
+    private String hp;
     
     Scanner sc = new Scanner(System.in);
     
@@ -16,19 +16,23 @@ public class Client
         name = sc.nextLine();
     }
     
+    public void setHP()
+    {
+        System.out.print("Enter phone number: ");
+        hp = sc.nextLine();
+    }
+
     public String getName()
     {
+        System.out.println(name);
         return name;
     }
 
-    public void setPhoneNumber()
+    public String getHP()
     {
-        System.out.print("Enter phone number: ");
-        phoneNumber = sc.nextLine();
+        System.out.println(hp);
+        return hp;
     }
 
-    public String getPhoneNumber()
-    {
-        return phoneNumber;
-    }
 }
+

@@ -17,19 +17,16 @@ public class Clients {
 
     // Adding a client object with Name and phoneNumber as well as its reservation
     // status in an ArrayList;
-    public void addClient() {
-        Client test = new Client();
-        test.setName();
-        test.getName();
-        test.setPhoneNumber();
-        test.getPhoneNumber();
-        clients.add(test);
+    public void addClient(Client aiman) {
+
+        clients.add(aiman);
+        System.out.println("New client added!");
 
     }
 
-    public void removeClient(int indexNumber) {
-        if (indexNumber >= 0 && indexNumber < clients.size()) {
-            clients.remove(indexNumber);
+    public void removeClient(int clientIndex) {
+        if (clientIndex >= 0 && clientIndex < clients.size()) {
+            clients.remove(clientIndex);
             System.out.println("Client removed successfully.");
         } else {
             System.out.println("Invalid client index.");
@@ -46,9 +43,9 @@ public class Clients {
         }
     }
 
-    public void findClient(int indexNumber) {
-        if (indexNumber >= 0 && indexNumber < clients.size()) {
-            System.out.println("Index " + indexNumber + ": " + clients.get(indexNumber));
+    public void findClient(int clientIndex) {
+        if (clientIndex >= 0 && clientIndex < clients.size()) {
+            System.out.println("Index " + clientIndex + ": " + clients.get(clientIndex));
         } else {
             System.out.println("There is no clients with the entered index number within the system.");
         }

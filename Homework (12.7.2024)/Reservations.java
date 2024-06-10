@@ -23,7 +23,7 @@ public class Reservations {
     }
 
     public void removeRes(int i) {
-        if (indexNumber >= 0 && indexNumber < tables.size()) 
+        if (indexNumber >= 0 && indexNumber < reservations.size()) 
         {
             reservations.remove(i);
             System.out.println("Reservation removed successfully");
@@ -38,20 +38,20 @@ public class Reservations {
         if (reservations.isEmpty()) {
             System.out.println("No reservations made");
         } else {
-            for (int i = 0; i < tables.size(); i++) {
+            for (int i = 0; i < reservations.size(); i++) {
                 System.out.println("Index " + i + ": " + reservations.get(i));
             }
         }
     }
 
     public void findRes(int i) {
-        if (i >= 0 && i < tables.size())
+        if (i >= 0 && i < reservations.size())
         {
-             System.out.println("Index " + i + ": " + tables.get(i));
+             System.out.println("Index " + i + ": " + reservations.get(i));
         }
         else
         {
-            System.out.println("There is no table with the entered index number within the system.");
+            System.out.println("No reservations found");
         }
     }
 }

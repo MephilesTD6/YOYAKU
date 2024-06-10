@@ -1,35 +1,47 @@
+
 // See Tho Soon Yinn
 // 24000187
 import java.util.*;
 
- 
-public class Main { 
-    public static void main (String[]args) {
- 
-        Scanner sc = new Scanner (System.in);
-        char addT,removeT,printT,findT;
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        char addT, removeT, printT, findT;
         int indexNumber;
 
-        /*Client avinash = new Client();
-        
-        avinash.setName();
-        avinash.getPhoneNumber();
-        System.out.println("The client's name is : " + avinash.getName());
-        System.out.println("The client's contact number is: " + avinash.getPhoneNumber()); */ 
-        
-        Table syukri = new Table();
-        syukri.setTableNum();
-        syukri.setChairNum();
-        syukri.getTableNum();
-        syukri.getChairNum();
-        System.out.println("\nReservation status of table is:" + syukri.reservationStatus());
+        /*
+         * Client avinash = new Client();
+         * 
+         * avinash.setName();
+         * avinash.getPhoneNumber();
+         * System.out.println("The client's name is : " + avinash.getName());
+         * System.out.println("The client's contact number is: " +
+         * avinash.getPhoneNumber());
+         */
 
+        // TESTING TABLE CLASS
+        Table syukri1 = new Table();// test constructor with no parameter
+        syukri1.setTableNum();
+        syukri1.setChairNum();
+        syukri1.getTableNum();
+        syukri1.getChairNum();
+        System.out.println(syukri1);
+
+        Table syukri2 = new Table(6, 9);// test constructor with parameter
+        syukri2.setTableNum();
+        syukri2.setChairNum();
+        syukri2.getTableNum();
+        syukri2.getChairNum();
+        System.out.println(syukri2);
+
+        // TESTING TABLES CLASS
         Tables seetho = new Tables();
-
         System.out.println("Do you want to add a table into the system? (Y/N)");
         addT = sc.next().charAt(0);
         if (addT == 'Y' || addT == 'y') {
-            seetho.addTable(syukri);
+            seetho.addTable(syukri1);
         }
 
         System.out.println("Do you want to remove a table from the system? (Y/N)");
@@ -57,4 +69,3 @@ public class Main {
         sc.close();
     }
 }
-

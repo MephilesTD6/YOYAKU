@@ -6,45 +6,56 @@ import java.util.Scanner;
 public class Reservation {
 
     private int tableNumber;
-    private int number_of_persons;
+    private int pax;
 
     private Scanner scanner = new Scanner(System.in);
 
-    public Reservation(int tableNumber, int number_of_persons) {
+    public Reservation(int tableNumber, int pax) {
         this.tableNumber = tableNumber;
-        this.number_of_persons = number_of_persons;
-        System.out
-                .println("\nCreated a reservation object with table number " + tableNumber + " for " + number_of_persons
-                        + " persons.");
+        this.pax = pax;
+        System.out.println("\nCreated a reservation object with table number" + tableNumber + "for" + pax + "persons.");
 
     }
 
     public Reservation() {
         this.tableNumber = 0;
-        this.number_of_persons = 0;
-        System.out.println("\nCreated reservation object");
+        this.pax = 0;
+        System.out.println("\nCreated a reservation object");
     }
 
-    public void get_table() {
-        System.out.print("Enter table number: ");
+    // input table number
+    public void setTable() {
+        System.out.println("Enter table number: ");
         this.tableNumber = scanner.nextInt();
 
     }
 
     // input number of persons
-    public void get_pax() {
-        System.out.print("Enter number of persons: ");
-        this.number_of_persons = scanner.nextInt();
+    public void setPax() {
+        System.out.println("Enter number of pax: ");
+        this.pax = scanner.nextInt();
+    }
+
+    public int getTable() {
+        System.out.println("\nThe table number is: " + tableNumber);
+        return tableNumber;
+    }
+
+    public int getPax() {
+        System.out.println("\nThe number of pax are : " + pax);
+        return pax;
     }
 
     // read input from Client class
-    public void client_input() {
-        get_pax();
-        get_table();
-    }
+    Client aiman = new Client();
+    String name = aiman.getName();
+    String phoneNumber = aiman.getPhoneNumber();
 
+    // To translate output to human friendly language, if not used, output from
+    // Reservations would be printed as Table@1a2b3c4d
     @Override
     public String toString() {
-        return "Table number: " + tableNumber + " Number of person: " + number_of_persons;
+        return "Table Number: " + tableNumber + ", Number of pax: " + pax + ", Client name: " + name
+                + ", Client phone number: " + phoneNumber;
     }
 }

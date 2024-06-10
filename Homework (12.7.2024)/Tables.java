@@ -22,7 +22,7 @@ public class Tables {
     public void addTable(Table syukri) {
 
         tables.add(syukri);
-        System.out.println("\nReservation status of table is:" + syukri.reservationStatus());
+        System.out.println("\nA table has been added into the system.");
     }
 
     public void removeTable(int indexNumber) {

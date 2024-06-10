@@ -3,36 +3,35 @@
 
 import java.util.Scanner;
 
-public class Client
-{
+public class Client {
     private String name;
     private String hp;
-    
+
     Scanner sc = new Scanner(System.in);
-    
-    public void setName()
-    {
+
+    public void setName() {
         System.out.print("Enter name: ");
         name = sc.nextLine();
     }
-    
-    public void setHP()
-    {
+
+    public void setHP() {
         System.out.print("Enter phone number: ");
         hp = sc.nextLine();
     }
 
-    public String getName()
-    {
+    public String getName() {
         System.out.println(name);
         return name;
     }
 
-    public String getHP()
-    {
+    public String getHP() {
         System.out.println(hp);
         return hp;
     }
 
-}
+    @Override
+    public String toString() {
+        return "Client name: " + name + " Phone number: " + hp;
+    }
 
+}

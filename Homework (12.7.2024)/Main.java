@@ -30,10 +30,6 @@ public class Main {
         System.out.println(syukri1);
 
         Table syukri2 = new Table(6, 9);// test constructor with parameter
-        syukri2.setTableNum();
-        syukri2.setChairNum();
-        syukri2.getTableNum();
-        syukri2.getChairNum();
         System.out.println(syukri2);
 
         // TESTING TABLES CLASS

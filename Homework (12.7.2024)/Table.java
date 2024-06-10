@@ -14,8 +14,9 @@ public class Table {
     
     boolean status = false;
     
-     Scanner sc = new Scanner(System.in);
-     
+    Scanner sc = new Scanner(System.in);
+
+   //CONSTRUCTORS
      public Table(int tableNumber, int chairNumber){
          this.tableNumber = tableNumber;
          this.chairNumber = chairNumber;
@@ -28,7 +29,7 @@ public class Table {
          System.out.println("\nCreated a Table object ");
      }
     
-    
+    //SETTERS
     public void setTableNum() {
         System.out.println("Enter table number: ");
         this.tableNumber = sc.nextInt();
@@ -38,7 +39,8 @@ public class Table {
         System.out.println("Enter number of chair: ");
         this.chairNumber = sc.nextInt();
     }
-    
+
+   //GETTERS
     public int getTableNum() {
         System.out.println("\nThe table number is: " + tableNumber);
         return tableNumber;
@@ -49,6 +51,7 @@ public class Table {
         return chairNumber;
     }
 
+   //RESERVATION STATUS METHOD
     public boolean reservationStatus() {
         boolean status = false;
 

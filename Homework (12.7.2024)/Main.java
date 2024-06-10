@@ -22,6 +22,7 @@ public class Main {
         syukri.setChairNum();
         syukri.getTableNum();
         syukri.getChairNum();
+        System.out.println("\nReservation status of table is:" + syukri.reservationStatus());
 
         Tables seetho = new Tables();
 

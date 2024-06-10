@@ -1,7 +1,6 @@
 //Hamzah Muhsin bin Hafiz Al-Asadi
 //22001057
 
-import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Clients {
@@ -22,8 +21,8 @@ public class Clients {
         Client test = new Client();
         test.setName();
         test.getName();
-        test.setHP();
-        test.getHP();
+        test.setPhoneNumber();
+        test.getPhoneNumber();
         clients.add(test);
 
     }

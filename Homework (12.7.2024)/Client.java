@@ -9,6 +9,18 @@ public class Client {
 
     Scanner sc = new Scanner(System.in);
 
+    public Client(String name, String phoneNumber) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        System.out.println("Created a client object with name of " + name + " and phone number: " + phoneNumber);
+    }
+
+    public Client() {
+        this.name = "";
+        this.phoneNumber = "";
+        System.out.println("Created client object");
+    }
+
     public void setName() {
         System.out.print("Enter name: ");
         name = sc.nextLine();

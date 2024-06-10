@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Reservations {
 
-    //Create an array from Table class
+    //Create an array from Reservation class
     private ArrayList<Reservation> reservations;
 
     //constructor for code fluidity
@@ -14,8 +14,6 @@ public class Reservations {
     this.reservations = new ArrayList<>();
     }
     
-        
-    //Adding a table object with tableNumber and chairNumber as well as its reservation status in an ArrayList;
     public void addRes(Reservation res) 
     {
         reservations.add(res);

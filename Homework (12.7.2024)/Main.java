@@ -17,13 +17,18 @@ public class Main {
         System.out.println("The client's name is : " + avinash.getName());
         System.out.println("The client's contact number is: " + avinash.getPhoneNumber()); */ 
         
+        Table syukri = new Table();
+        syukri.setTableNum();
+        syukri.setChairNum();
+        syukri.getTableNum();
+        syukri.getChairNum();
 
         Tables seetho = new Tables();
 
         System.out.println("Do you want to add a table into the system? (Y/N)");
         addT = sc.next().charAt(0);
         if (addT == 'Y' || addT == 'y') {
-            seetho.addTable();
+            seetho.addTable(syukri);
         }
 
         System.out.println("Do you want to remove a table from the system? (Y/N)");
@@ -51,3 +56,4 @@ public class Main {
         sc.close();
     }
 }
+

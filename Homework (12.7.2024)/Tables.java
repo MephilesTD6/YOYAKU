@@ -19,12 +19,8 @@ public class Tables {
     
         
     //Adding a table object with tableNumber and chairNumber as well as its reservation status in an ArrayList;
-    public void addTable() {
-        Table syukri = new Table();
-        syukri.setTableNum();
-        syukri.setChairNum();
-        syukri.getTableNum();
-        syukri.getChairNum();
+    public void addTable(Table syukri) {
+
         tables.add(syukri);
         System.out.println("\nReservation status of table is:" + syukri.reservationStatus());
     }
@@ -56,5 +52,6 @@ public class Tables {
         }
     }
 }
+
 
 

@@ -1,50 +1,57 @@
 // Avinash Kumar A/L Jayaseelan
 // 24000113
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
 
 public class Reservations {
 
- private List<Reservation> action;
+    //Create an array from Table class
+    private ArrayList<Reservation> reservations;
 
+    //constructor for code fluidity
     public Reservations() {
-    this.action = new ArrayList<>();
+    this.reservations = new ArrayList<>();
+    }
+    
+        
+    //Adding a table object with tableNumber and chairNumber as well as its reservation status in an ArrayList;
+    public void addRes(Reservation res) 
+    {
+        reservations.add(res);
+        System.out.println("New reservation added!");
     }
 
-    public void addRes(String newName, String newPhoneNo)
-    {
-        name.add(newName);
-        phone_number.add(newPhoneNo);
-        return;
-    }
-
-    public void delRes(String delInfo)
-    {
-        int i = find(delInfo);
-        name.remove(i);
-        phone_number.remove(i);
-        return;
-    }
-
-    public void printRes()
-    {
-        System.out.println(name);
-        return;
-    }
-
-    public void findRes()
-    {
-        int index = -1;
-        for(int i = 0; i < name.size(); i++)
+    public void removeRes(int i) {
+        if (indexNumber >= 0 && indexNumber < tables.size()) 
         {
-            if(name.get(i) == findInfo || phone_number.get(i) == findInfo)
-            {
-                index = i;
-                break;
+            reservations.remove(i);
+            System.out.println("Reservation removed successfully");
+        }
+        else 
+        {
+            System.out.println("Invalid reservation");
+        }
+    }
+
+    public void printRes() {
+        if (reservations.isEmpty()) {
+            System.out.println("No reservations made");
+        } else {
+            for (int i = 0; i < tables.size(); i++) {
+                System.out.println("Index " + i + ": " + reservations.get(i));
             }
         }
-        return index;
-        return;
+    }
+
+    public void findRes(int i) {
+        if (i >= 0 && i < tables.size())
+        {
+             System.out.println("Index " + i + ": " + tables.get(i));
+        }
+        else
+        {
+            System.out.println("There is no table with the entered index number within the system.");
+        }
     }
 }

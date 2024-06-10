@@ -13,14 +13,14 @@ public class Reservations {
         this.reservations = new ArrayList<>();
     }
 
-    public void addRes(Reservation res) {
-        reservations.add(res);
+    public void addRes(Reservation ashwin) {
+        reservations.add(ashwin);
         System.out.println("New reservation added!");
     }
 
-    public void removeRes(int indexNumber) {
-        if (indexNumber >= 0 && indexNumber < reservations.size()) {
-            reservations.remove(indexNumber);
+    public void removeRes(int resIndex) {
+        if (resIndex >= 0 && resIndex < reservations.size()) {
+            reservations.remove(resIndex);
             System.out.println("Reservation removed successfully");
         } else {
             System.out.println("Invalid reservation");

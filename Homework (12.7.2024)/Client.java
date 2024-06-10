@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Client {
     private String name;
-    private String hp;
+    private String phoneNumber;
 
     Scanner sc = new Scanner(System.in);
 
@@ -14,24 +14,22 @@ public class Client {
         name = sc.nextLine();
     }
 
-    public void setHP() {
-        System.out.print("Enter phone number: ");
-        hp = sc.nextLine();
-    }
-
     public String getName() {
-        System.out.println(name);
         return name;
     }
 
-    public String getHP() {
-        System.out.println(hp);
-        return hp;
+    public void setPhoneNumber() {
+        System.out.print("Enter phone number: ");
+        phoneNumber = sc.nextLine();
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
     @Override
     public String toString() {
-        return "Client name: " + name + " Phone number: " + hp;
+        return "Client name: " + name + " Number of person: " + phoneNumber;
     }
 
 }

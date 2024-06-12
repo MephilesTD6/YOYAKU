@@ -5,18 +5,16 @@ import java.util.ArrayList;
 
 public class Clients {
 
-    int name, phoneNumber;
+    string name, phoneNumber;  //Client name and phone number in string
 
-    // Create an array from Client class
-    private ArrayList<Client> clients;
+    private ArrayList<Client> clients; //List to store clients
 
-    // constructor for code fluidity
+    //constructor
     public Clients() {
         this.clients = new ArrayList<>();
     }
 
-    // Adding a client object with Name and phoneNumber as well as its reservation
-    // status in an ArrayList;
+    // Method to add a client to the clients list
     public void addClient(Client aiman) {
 
         clients.add(aiman);
@@ -24,6 +22,7 @@ public class Clients {
 
     }
 
+    // Method to remove a client from the clients list
     public void removeClient(int clientIndex) {
         if (clientIndex >= 0 && clientIndex < clients.size()) {
             clients.remove(clientIndex);
@@ -33,6 +32,7 @@ public class Clients {
         }
     }
 
+    // Method to print the details of clients
     public void printClient() {
         if (clients.isEmpty()) {
             System.out.println("No clients in the system.");
@@ -43,6 +43,7 @@ public class Clients {
         }
     }
 
+    // Method to find a specific client in the clients list using index number as an input
     public void findClient(int clientIndex) {
         if (clientIndex >= 0 && clientIndex < clients.size()) {
             System.out.println("Index " + clientIndex + ": " + clients.get(clientIndex));

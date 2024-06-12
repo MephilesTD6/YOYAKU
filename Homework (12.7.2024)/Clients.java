@@ -5,8 +5,6 @@ import java.util.ArrayList;
 
 public class Clients {
 
-    string name, phoneNumber;  //Client name and phone number in string
-
     private ArrayList<Client> clients; //List to store clients
 
     //constructor

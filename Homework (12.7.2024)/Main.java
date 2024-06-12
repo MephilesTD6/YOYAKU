@@ -2,63 +2,72 @@
 // 24000187
 import java.util.*;
 
- 
 public class Main { 
     public static void main (String[]args) {
- 
-        Scanner sc = new Scanner (System.in);
 
+        // Create a Scanner object for user input
+        Scanner sc = new Scanner (System.in);
+     
         char addT, removeT, printT, findT;
         char addR, removeR, printR, findR;
         char addC, removeC, printC, findC;
         int tableIndex, resIndex, clientIndex;
 
+        // Creating and initializing a Client object
         Client aiman = new Client();
         aiman.setName();
         aiman.setPhoneNumber();
         aiman.getName();
         aiman.getPhoneNumber();
         System.out.println(aiman);
-        
+
+        // Creating and initializing a Clients collection
         Clients hamzah = new Clients();
 
+        // Ask user if they want to add a client to the system
         System.out.println("\nDo you want to add a client into the system? (Y/N)");
         addC = sc.next().charAt(0);
         if (addC == 'Y' || addC == 'y') {
-            hamzah.addClient(aiman);
+            hamzah.addClient(aiman);// Add client to the system
         }
-
+     
+        // Ask user if they want to remove a client from the system
         System.out.println("Do you want to remove a client from the system? (Y/N)");
         removeC = sc.next().charAt(0);
         if (removeC == 'Y' || removeC == 'y') {
             System.out.println("Enter client index number to remove: ");
             clientIndex = sc.nextInt();
-            hamzah.removeClient(clientIndex);
+            hamzah.removeClient(clientIndex);  // Remove client from the system by index
         }
 
+        // Ask user if they want to print the client list from the system
         System.out.println("Do you want to print the client list from the system? (Y/N)");
         printC = sc.next().charAt(0);
         if (printC == 'Y' || printC == 'y') {
-            hamzah.printClient();
+            hamzah.printClient();  // Print all clients in the system
         }
 
+        // Ask user if they want to find a client in the system
         System.out.println("Do you want to find a client in the system? (Y/N)");
         findC = sc.next().charAt(0);
         if (findC == 'Y' || findC == 'y') {
             System.out.println("Enter client index number: ");
             clientIndex = sc.nextInt();
-            hamzah.findClient(clientIndex);
+            hamzah.findClient(clientIndex);  // Find and display client by index
         }
-        
+
+        // Creating and initializing a Table object
         Table syukri = new Table();
         syukri.setTableNum();
         syukri.setChairNum();
         syukri.getTableNum();
         syukri.getChairNum();
-        System.out.println("\nReservation status of table is:" + syukri.getStatus());
+        System.out.println("\nReservation status of table is:" + syukri.getStatus());  // Print table reservation status
 
+        // Creating and initializing a Tables collection
         Tables seetho = new Tables();
 
+        //All further codes which include actions similar to that of Clients follows the same function for their class
         System.out.println("Do you want to add a table into the system? (Y/N)");
         addT = sc.next().charAt(0);
         if (addT == 'Y' || addT == 'y') {
@@ -86,14 +95,16 @@ public class Main {
             tableIndex = sc.nextInt();
             seetho.findTable(tableIndex);
         }
-        
+
+        // Creating and initializing a Reservation object
         Reservation ashwin = new Reservation();
         ashwin.setTable();
         ashwin.setPax();
         ashwin.getTable();
         ashwin.getPax();
-        ashwin.readClientDetails();
-        
+        ashwin.readClientDetails(); // Read and print client details associated with the reservation
+
+        // Creating and initializing a Reservations collection
         Reservations avinash = new Reservations();
 
         System.out.println("\nDo you want to add a reservation into the system? (Y/N)");
@@ -125,8 +136,6 @@ public class Main {
             resIndex = sc.nextInt();
             avinash.findRes(resIndex);
         }
-
-        
 
         sc.close();
     }

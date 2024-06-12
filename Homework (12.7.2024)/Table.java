@@ -25,7 +25,7 @@ public class Table {
     
     //SETTERS
     public void setTableNum() {//prompt to set table number
-        System.out.print("Enter table number: ");
+        System.out.print("\nEnter table number: ");
         tableNumber = sc.nextInt();
     }
     

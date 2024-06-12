@@ -31,7 +31,7 @@ public class Reservation {
    //input table number
       public void setTable()
     {
-        System.out.print("Enter table number: ");
+        System.out.print("Enter table number to be reserved: ");
         this.tableNumber = scanner.nextInt();
         
     }
@@ -45,7 +45,7 @@ public class Reservation {
     
    public int getTable()
    {
-       System.out.print("\nThe table number is: " + tableNumber);
+       System.out.print("\nThe table to be reserved is table no.: " + tableNumber);
        return tableNumber;
    }
    

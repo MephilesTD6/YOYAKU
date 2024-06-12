@@ -5,9 +5,6 @@ import java.util.*;
 
 
 public class Tables {
-    
-    int tableNumber, chairNumber;
-
 
     //Create an array from Table class
     private ArrayList<Table> tables;

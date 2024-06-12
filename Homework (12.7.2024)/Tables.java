@@ -1,8 +1,6 @@
 // See Tho Soon Yinn
 // 24000187
-
 import java.util.*;
-
 
 public class Tables {
 
@@ -23,11 +21,11 @@ public class Tables {
     }
 
     public void removeTable(int tableIndex) {
-               if (tableIndex >= 0 && tableIndex < tables.size()) {
-            tables.remove(tableIndex);
-            System.out.println("Table removed successfully.");
+            if (tableIndex >= 0 && tableIndex < tables.size()) {
+                tables.remove(tableIndex);
+                System.out.println("Table removed successfully.");
         } else {
-            System.out.println("Invalid table index.");
+                System.out.println("Invalid table index.");
         }
     }
 

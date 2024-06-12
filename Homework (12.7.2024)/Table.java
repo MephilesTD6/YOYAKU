@@ -20,27 +20,27 @@ public class Table {
      public Table(){
          this.tableNumber = tableNumber;
          this.chairNumber = chairNumber;
-         System.out.println("\nCreated a Table object ");
+         System.out.print("\nCreated a Table object ");
      }
     
     
     public void setTableNum() {
-        System.out.println("Enter table number: ");
+        System.out.print("Enter table number: ");
         tableNumber = sc.nextInt();
     }
     
     public int getTableNum() {
-        System.out.println("\nThe table number is: " + tableNumber);
+        System.out.print("\nThe table number is: " + tableNumber);
         return tableNumber;
     }
     
     public void setChairNum() {
-        System.out.println("Enter number of chair: ");
+        System.out.print("Enter number of chair: ");
         chairNumber = sc.nextInt();
     }
 
     public int getChairNum() {
-        System.out.println("\nThe number of chairs is: " + chairNumber);
+        System.out.print("\nThe number of chairs is: " + chairNumber);
         return chairNumber;
     }
     

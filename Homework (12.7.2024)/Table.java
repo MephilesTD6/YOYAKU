@@ -10,45 +10,46 @@ public class Table {
     private boolean status = false;
     
      Scanner sc = new Scanner(System.in);
-     
-     public Table(int tableNumber, int chairNumber){
-         this.tableNumber = tableNumber;
+     //CONSTRUCTORS
+     public Table(int tableNumber, int chairNumber){//object will be created when called with parameters
+         this.tableNumber = tableNumber;//assigned to value of parameters passed through
          this.chairNumber = chairNumber;
          System.out.println("\nCreated a Table object ");
      }
 
-     public Table(){
+     public Table(){//default object will be created
          this.tableNumber = tableNumber;
          this.chairNumber = chairNumber;
          System.out.print("\nCreated a Table object ");
      }
     
-    
-    public void setTableNum() {
+    //SETTERS
+    public void setTableNum() {//prompt to set table number
         System.out.print("Enter table number: ");
         tableNumber = sc.nextInt();
     }
     
-    public int getTableNum() {
-        System.out.print("\nThe table number is: " + tableNumber);
-        return tableNumber;
-    }
-    
-    public void setChairNum() {
+    public void setChairNum() {//prompt to set chair number
         System.out.print("Enter number of chair: ");
         chairNumber = sc.nextInt();
     }
 
-    public int getChairNum() {
+    public void setStatus(boolean status) {//prompt to give status of reservation
+        this.status = status;
+    }
+
+    //GETTERS
+    public int getTableNum() {//return table number when called
+        System.out.print("\nThe table number is: " + tableNumber);
+        return tableNumber;
+    }
+
+    public int getChairNum() {//return chair number when called
         System.out.print("\nThe number of chairs is: " + chairNumber);
         return chairNumber;
     }
     
-    public void setStatus(boolean status) {
-        this.status = status;
-    }
-    
-    public boolean getStatus() {
+    public boolean getStatus() {//return status of reservation
         return status;
     }
     

@@ -20,6 +20,7 @@ public class Tables {
         System.out.println("New table added!");
     }
 
+    //Removes a table object in the list
     public void removeTable(int tableIndex) {
             if (tableIndex >= 0 && tableIndex < tables.size()) {
                 tables.remove(tableIndex);
@@ -29,6 +30,7 @@ public class Tables {
         }
     }
 
+    //prints all table objects in the list
     public void printTable() {
         if (tables.isEmpty()) {
             System.out.println("No tables in the system.");
@@ -39,6 +41,7 @@ public class Tables {
         }
     }
 
+    //finds a table in the list based on the entered index number
     public void findTable(int tableIndex) {
         if (tableIndex >= 0 && tableIndex < tables.size()) {
              System.out.println("Index " + tableIndex + ": " + tables.get(tableIndex));

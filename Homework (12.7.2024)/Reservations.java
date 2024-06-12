@@ -11,12 +11,12 @@ public class Reservations {
     public Reservations() {
         this.reservations = new ArrayList<>();
     }
-
+    // Method to add reservation to list of reservations 
     public void addRes(Reservation ashwin) {
         reservations.add(ashwin);
         System.out.println("New reservation added!");
     }
-
+    // Method to remove reservation from list of reservations
     public void removeRes(int resIndex) {
         if (resIndex >= 0 && resIndex < reservations.size()) {
             reservations.remove(resIndex);
@@ -25,7 +25,7 @@ public class Reservations {
             System.out.println("Invalid reservation");
         }
     }
-
+    // Method to print all reservations in list 
     public void printRes() {
         if (reservations.isEmpty()) {
             System.out.println("No reservations made");
@@ -35,7 +35,7 @@ public class Reservations {
             }
         }
     }
-
+    // Method to find specific reservation and print it
     public void findRes(int i) {
         if (i >= 0 && i < reservations.size()) {
             System.out.println("Index " + i + ": " + reservations.get(i));

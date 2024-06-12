@@ -22,12 +22,12 @@ public class Tables {
     public void addTable(Table syukri) {
 
         tables.add(syukri);
-        System.out.println("\nA table has been added into the system.");
+        System.out.println("New table added!");
     }
 
-    public void removeTable(int indexNumber) {
-               if (indexNumber >= 0 && indexNumber < tables.size()) {
-            tables.remove(indexNumber);
+    public void removeTable(int tableIndex) {
+               if (tableIndex >= 0 && tableIndex < tables.size()) {
+            tables.remove(tableIndex);
             System.out.println("Table removed successfully.");
         } else {
             System.out.println("Invalid table index.");
@@ -44,13 +44,15 @@ public class Tables {
         }
     }
 
-    public void findTable(int indexNumber) {
-        if (indexNumber >= 0 && indexNumber < tables.size()) {
-             System.out.println("Index " + indexNumber + ": " + tables.get(indexNumber));
+    public void findTable(int tableIndex) {
+        if (tableIndex >= 0 && tableIndex < tables.size()) {
+             System.out.println("Index " + tableIndex + ": " + tables.get(tableIndex));
         }else{
             System.out.println("There is no table with the entered index number within the system.");
         }
     }
+}
+
 }
 
 

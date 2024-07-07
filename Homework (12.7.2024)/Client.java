@@ -22,6 +22,7 @@ public class Client
     public Client(String name, String phoneNumber){
         this.name = name;
         this.phonenumber = phoneNumber;
+        System.out.println("Created a client object");
     }
     
     

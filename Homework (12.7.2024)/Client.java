@@ -12,6 +12,18 @@ public class Client
     
     // Scanner object to read user input from the console
     Scanner sc = new Scanner(System.in);
+
+    //Constructors
+    public Client(){
+        this.name = "";
+        this.phonenumber = "";
+    }
+    
+    public Client(String name, String phoneNumber){
+        this.name = name;
+        this.phonenumber = phoneNumber;
+    }
+    
     
     // Method to set the client's name
     public void setName()

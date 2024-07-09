@@ -60,7 +60,7 @@ public class ReservationGUI extends Application {
 
         // Add Reservation Pane
         Button backFromAddReservationBtn = new Button("Back");
-        Label tableNumberLabel = new Label("Table number:");
+        Label tableNumberLabel = new Label("Reservation number:");
         TextField tableNumberField = new TextField();
         Label paxNumberLabel = new Label("Number of pax:");
         TextField paxNumberField = new TextField();

@@ -222,29 +222,6 @@ class YoyakuDB {
     }
 }
 
-    /*public void findClient(String clientName){
-        try{
-            ResultSet rs = stmt.executeQuery("SELECT * FROM Clients WHERE Name = "+clientName+" ;");
-            
-            if (rs.next()) {
-                String name = rs.getString("Name");
-                String phoneNumber = rs.getString("Phone no.");
-
-                System.out.println("Name: " + name);
-                System.out.println("Phone Number: " + phoneNumber);
-                System.out.println("--------------------------");
-            }else {
-                System.out.println("Client with name " + clientName + " not found.");
-            }
-                rs.close();
-        }catch(SQLException ex) {
-            System.out.println("An error occurred. Maybe user/password is invalid");
-            ex.printStackTrace();
-            System.out.println(ex);
-            // catch whatever else, esp connector loading
-        }
-    }  */  
-    
     public void findTable(int tableNumber){
             try {
             ResultSet rs = stmt.executeQuery("SELECT * FROM Tables WHERE `Table no.`= " + tableNumber + ";");
